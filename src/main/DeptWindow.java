@@ -237,7 +237,7 @@ public class DeptWindow extends JFrame {
 		try {
 			Departamento nuevo = departamentoServicio.saveOrUpdate(dept);
 			if (nuevo != null) {
-				addMensaje(true, "Se ha creado un departamento con id: " + nuevo.getDeptno());
+				addMensaje(true, "Se ha creado/actualizado un departamento con id: " + nuevo.getDeptno());
 				getAllDepartamentos();
 			} else {
 				addMensaje(true, " El departamento no se ha creado/actualizado correctamente");
